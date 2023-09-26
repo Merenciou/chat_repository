@@ -22,10 +22,9 @@ class _HomePage extends State<HomePage> {
                 child: Expanded(
                   child: ElevatedButton(
                       onPressed: () => {
-                            Navigator.pushReplacement(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const ChatPage()))
+                            //TODO: Raramente se usa esse tipo de navegação. Trabalha-se com Named Routes
+                            //TODO: ver video https://www.youtube.com/watch?v=9olJ-lTSM8E
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const ChatPage()))
                           },
                       child: const Text('Entrar')),
                 ))
